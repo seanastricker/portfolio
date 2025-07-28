@@ -197,35 +197,38 @@ export default function Portfolio() {
               >
                 <Card className="overflow-hidden group hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 border-gray-700 bg-gray-800 hover:border-blue-500/50">
                   {/* Video Section */}
-                  <div className="relative aspect-video bg-gray-700 overflow-hidden">
+                  <div className="relative aspect-video bg-gray-700 overflow-hidden cursor-pointer group">
                     <video
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      poster={project.video.poster}
                       controls={playingVideo === project.id}
                       onPlay={() => setPlayingVideo(project.id)}
                       onPause={() => setPlayingVideo(null)}
                       onEnded={() => setPlayingVideo(null)}
                       preload="metadata"
+                      muted
+                      playsInline
+                      onClick={(e) => {
+                        if (playingVideo !== project.id) {
+                          e.preventDefault();
+                          const video = e.currentTarget;
+                          video.play().then(() => {
+                            setPlayingVideo(project.id);
+                          }).catch((error) => {
+                            console.error('Error playing video:', project.id, error);
+                          });
+                        }
+                      }}
                     >
                       <source src={project.video.src} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                     
-                    {/* Play button overlay */}
+                    {/* Small play button overlay - only when not playing */}
                     {playingVideo !== project.id && (
-                      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                        <button
-                          className="flex items-center justify-center w-16 h-16 bg-white bg-opacity-90 rounded-full text-gray-800 hover:bg-opacity-100 transition-all duration-200 hover:scale-110"
-                          onClick={(e) => {
-                            const video = e.currentTarget.closest('.relative')?.querySelector('video') as HTMLVideoElement;
-                            if (video) {
-                              video.play();
-                              setPlayingVideo(project.id);
-                            }
-                          }}
-                        >
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div className="flex items-center justify-center w-16 h-16 bg-black bg-opacity-60 rounded-full text-white shadow-lg opacity-80 group-hover:opacity-100 transition-opacity duration-200">
                           <Play className="w-6 h-6 ml-1" />
-                        </button>
+                        </div>
                       </div>
                     )}
 
