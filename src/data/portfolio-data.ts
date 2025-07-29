@@ -40,7 +40,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "snap-factor",
       title: "Snap Factor",
-      subtitle: "AI-powered educational social platform for K-12 mathematics",
+      subtitle: "AI-powered Educational Social Platform for K-12 Mathematics",
       description: "Snap photos of math problems for instant homework assistance, access RAG-powered explanations and practice problems, compete in daily math challenges, and engage in collaborative learning experiences with peers.",
       technologies: ["React Native", "Expo", "TypeScript", "Firebase", "OpenAI API", "Pinecone", "Python"],
       video: {
@@ -57,7 +57,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "brainswift",
       title: "BrainSwift",
-      subtitle: "AI-powered BrainLift researcher and document generator",
+      subtitle: "AI-powered BrainLift Researcher and Document Generator",
       description: "Define your research purpose through AI-guided conversations, automate parallel research across Experts, SpikyPOVs, and Knowledge Trees, generate comprehensive documents with citations, and seamlessly integrate with your project directories for version tracking.",
       technologies: ["Electron", "React", "TypeScript", "Firebase", "OpenAI API", "Tavily API", "TypeScript Orchestration", "Zustand"],
       video: {
@@ -75,9 +75,9 @@ export const portfolioData: PortfolioData = {
     {
       id: "spool",
       title: "Spool",
-      subtitle: "Intelligent learning platform generating uniquely tailored study materials",
-      description: "A revolutionary educational web application built with microservices architecture that transforms the learning process through AI-powered content generation. Features personalized study material creation, exercise generation, progress tracking, interview assessments, and intelligent learning analytics. Utilizes advanced algorithms to deliver customized educational experiences for each learner.",
-      technologies: ["TypeScript", "Python", "Microservices", "AI/ML", "Content Generation", "FastAPI", "React"],
+      subtitle: "Intelligent Personalized Applied Learning Platform",
+      description: "Follow any thread of curiosity and receive AI-powered content generation backed by credible open-source textbooks to transform your learning process. Utilize our personalized study material creation, exercise generation, progress tracking, interview assessments, and intelligent learning analytics.",
+              technologies: ["TypeScript", "Python", "Microservices", "AI/ML", "Content Generation", "FastAPI", "React", "OpenStax"],
       video: {
         src: "https://www.youtube.com/embed/cP_HGO1Sqs4",
         alt: "Spool Demo"
@@ -92,9 +92,9 @@ export const portfolioData: PortfolioData = {
     {
       id: "austen-allreds-advanced-ai-arena",
       title: "Austen Allred's Advanced AI Arena: ATX",
-      subtitle: "2D multiplayer life simulation game with strategic stat management",
-      description: "An engaging desktop game built with Godot Engine where players simulate the life of a challenger balancing Health, Social, and CCAT Score stats to land a $200k job or face elimination. Features real-time multiplayer support for up to 10 players, Pokemon-inspired top-down 2D environments, character customization, and strategic decision-making with meaningful trade-offs in a competitive career simulation.",
-      technologies: ["Godot Engine", "GDScript", "Multiplayer Networking", "2D Graphics", "Real-time Systems", "Game Design"],
+      subtitle: "2D Multiplayer Gauntlet AI Simulation Game with Strategic Stat Management",
+      description: "Simulate the life of Gauntlet AI Challenger who must balance Health, Social, and CCAT Score throughout the program to land a $200k job or be kicked out. Real-time multiplayer support, pixel-art top-down 2D environments, and character customization.",
+              technologies: ["Godot Engine", "GDScript", "Multiplayer Networking", "2D Graphics", "Real-time Systems"],
       video: {
         src: "https://www.youtube.com/embed/zROjzgARbWE",
         alt: "Austen Allred's Advanced AI Arena Demo"
@@ -110,8 +110,8 @@ export const portfolioData: PortfolioData = {
     {
       id: "youth-sports-league-crm",
       title: "Youth Sports League CRM",
-      subtitle: "Comprehensive customer relationship management system for youth sports organizations",
-      description: "A specialized CRM solution built on SuiteCRM platform, designed specifically for youth sports leagues and organizations. Features player registration management, team coordination, parent communication, scheduling systems, payment tracking, and comprehensive reporting. Includes customized modules for league administration, coach management, and event organization with a focus on youth sports operations.",
+      subtitle: "Customer Relationship Management System for Youth Sports Organizations",
+      description: "A specialized CRM solution built on SuiteCRM platform, designed specifically to manage volunteer background checks, volunteer hours, program matching, parent communication, incident reporting, and equipment tracking for volunteers and parents to have everything they need to manage youth sports leagues.",
       technologies: ["PHP", "JavaScript", "Smarty", "SCSS", "MySQL", "SuiteCRM Platform", "Web Development"],
       video: {
         src: "https://www.youtube.com/embed/09g8J99iRoc",
