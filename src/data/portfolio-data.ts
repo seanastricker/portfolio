@@ -26,7 +26,7 @@ export const portfolioData: PortfolioData = {
       description: "An innovative writing assistant that combines AI-powered grammar checking with intelligent suggestions to improve writing quality. Features real-time grammar analysis, contextual corrections, and an intuitive user interface designed for writers and content creators.",
       technologies: ["TypeScript", "React", "Vite", "Tailwind CSS", "Firebase", "AI/ML APIs"],
       video: {
-        src: "/videos/dungeonsanddrafting.mp4",
+        src: "https://www.youtube.com/embed/DGKQE0eA_UA",
         alt: "Dungeons & Drafting Demo"
       },
       links: {
@@ -44,7 +44,7 @@ export const portfolioData: PortfolioData = {
       description: "An innovative mobile application that combines Snapchat-style social features with AI-powered mathematics education. Features include homework assistance through image recognition, RAG-powered explanations using OpenStax textbooks, daily math challenges, and collaborative learning experiences. Built with React Native and advanced AI technologies.",
       technologies: ["React Native", "Expo", "TypeScript", "Firebase", "OpenAI API", "Pinecone", "Python"],
       video: {
-        src: "/videos/snapfactor.mp4",
+        src: "https://www.youtube.com/embed/KAHFnyNhLaE",
         alt: "Snap Factor Demo"
       },
       links: {
@@ -61,7 +61,7 @@ export const portfolioData: PortfolioData = {
       description: "A sophisticated desktop application that revolutionizes research and writing workflows through AI automation. Features intelligent purpose definition, multi-source research orchestration, expert analysis integration, and automated document generation. Built with advanced AI technologies including LangGraph workflows and real-time collaboration features.",
       technologies: ["Electron", "React", "TypeScript", "Firebase", "OpenAI API", "Tavily API", "LangGraph", "Zustand"],
       video: {
-        src: "/videos/brainswift.mp4",
+        src: "https://www.youtube.com/embed/iZiv-WBLr8k",
         alt: "BrainSwift Demo"
       },
       links: {
@@ -79,7 +79,7 @@ export const portfolioData: PortfolioData = {
       description: "A revolutionary educational web application built with microservices architecture that transforms the learning process through AI-powered content generation. Features personalized study material creation, exercise generation, progress tracking, interview assessments, and intelligent learning analytics. Utilizes advanced algorithms to deliver customized educational experiences for each learner.",
       technologies: ["TypeScript", "Python", "Microservices", "AI/ML", "Content Generation", "FastAPI", "React"],
       video: {
-        src: "/videos/spool.mp4",
+        src: "https://www.youtube.com/embed/cP_HGO1Sqs4",
         alt: "Spool Demo"
       },
       links: {
@@ -96,7 +96,7 @@ export const portfolioData: PortfolioData = {
       description: "An engaging desktop game built with Godot Engine where players simulate the life of a challenger balancing Health, Social, and CCAT Score stats to land a $200k job or face elimination. Features real-time multiplayer support for up to 10 players, Pokemon-inspired top-down 2D environments, character customization, and strategic decision-making with meaningful trade-offs in a competitive career simulation.",
       technologies: ["Godot Engine", "GDScript", "Multiplayer Networking", "2D Graphics", "Real-time Systems", "Game Design"],
       video: {
-        src: "/videos/austenallredsadvancedaiarenaatx.mp4",
+        src: "https://www.youtube.com/embed/zROjzgARbWE",
         alt: "Austen Allred's Advanced AI Arena Demo"
       },
       links: {
@@ -114,7 +114,7 @@ export const portfolioData: PortfolioData = {
       description: "A specialized CRM solution built on SuiteCRM platform, designed specifically for youth sports leagues and organizations. Features player registration management, team coordination, parent communication, scheduling systems, payment tracking, and comprehensive reporting. Includes customized modules for league administration, coach management, and event organization with a focus on youth sports operations.",
       technologies: ["PHP", "JavaScript", "Smarty", "SCSS", "MySQL", "SuiteCRM Platform", "Web Development"],
       video: {
-        src: "/videos/youthsportsleaguecrm.mp4",
+        src: "https://www.youtube.com/embed/09g8J99iRoc",
         alt: "Youth Sports League CRM Demo"
       },
       links: {

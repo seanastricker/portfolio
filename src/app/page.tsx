@@ -1,16 +1,12 @@
 'use client';
-
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Github, ExternalLink, Mail, MapPin, Play, Linkedin, ArrowDown } from 'lucide-react';
+import { Github, ExternalLink, Mail, MapPin, Linkedin, ArrowDown } from 'lucide-react';
 import { portfolioData } from '@/data/portfolio-data';
 
 export default function Portfolio() {
-  const [playingVideo, setPlayingVideo] = useState<string | null>(null);
-
   const { personal, social, projects } = portfolioData;
 
   // Sort projects with featured ones first
@@ -197,41 +193,16 @@ export default function Portfolio() {
               >
                 <Card className="overflow-hidden group hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 border-gray-700 bg-gray-800 hover:border-blue-500/50">
                   {/* Video Section */}
-                  <div className="relative aspect-video bg-gray-700 overflow-hidden cursor-pointer group">
-                    <video
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      controls={playingVideo === project.id}
-                      onPlay={() => setPlayingVideo(project.id)}
-                      onPause={() => setPlayingVideo(null)}
-                      onEnded={() => setPlayingVideo(null)}
-                      preload="metadata"
-                      muted
-                      playsInline
-                      onClick={(e) => {
-                        if (playingVideo !== project.id) {
-                          e.preventDefault();
-                          const video = e.currentTarget;
-                          video.play().then(() => {
-                            setPlayingVideo(project.id);
-                          }).catch((error) => {
-                            console.error('Error playing video:', project.id, error);
-                          });
-                        }
-                      }}
-                    >
-                      <source src={project.video.src} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
+                  <div className="relative aspect-video bg-gray-700 overflow-hidden">
+                    <iframe
+                      className="w-full h-full"
+                      src={project.video.src}
+                      title={project.video.alt}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
                     
-                    {/* Small play button overlay - only when not playing */}
-                    {playingVideo !== project.id && (
-                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                        <div className="flex items-center justify-center w-16 h-16 bg-black bg-opacity-60 rounded-full text-white shadow-lg opacity-80 group-hover:opacity-100 transition-opacity duration-200">
-                          <Play className="w-6 h-6 ml-1" />
-                        </div>
-                      </div>
-                    )}
-
                     {/* Category badge */}
                     <Badge variant="secondary" className="absolute top-4 right-4 bg-gray-700 text-gray-300">
                       {project.category}
