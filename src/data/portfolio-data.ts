@@ -22,8 +22,8 @@ export const portfolioData: PortfolioData = {
     {
       id: "dungeons-and-drafting",
       title: "Dungeons & Drafting",
-      subtitle: "AI-powered writing assistant with intelligent grammar suggestions",
-      description: "An innovative writing assistant that combines AI-powered grammar checking with intelligent suggestions to improve writing quality. Features real-time grammar analysis, contextual corrections, and an intuitive user interface designed for writers and content creators.",
+      subtitle: "AI-powered Dungeons & Dragons Campaign Assistant",
+      description: "Generate compelling storylines, craft memorable characters and monsters, balance encounters, and bring your fantasy worlds to life with advanced writing and content generation assistance.",
       technologies: ["TypeScript", "React", "Vite", "Tailwind CSS", "Firebase", "AI/ML APIs"],
       video: {
         src: "https://www.youtube.com/embed/DGKQE0eA_UA",
