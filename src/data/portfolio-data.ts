@@ -57,9 +57,9 @@ export const portfolioData: PortfolioData = {
     {
       id: "brainswift",
       title: "BrainSwift",
-      subtitle: "AI-powered research and writing assistant with intelligent workflow automation",
-      description: "A sophisticated desktop application that revolutionizes research and writing workflows through AI automation. Features intelligent purpose definition, multi-source research orchestration, expert analysis integration, and automated document generation. Built with advanced AI technologies including LangGraph workflows and real-time collaboration features.",
-      technologies: ["Electron", "React", "TypeScript", "Firebase", "OpenAI API", "Tavily API", "LangGraph", "Zustand"],
+      subtitle: "AI-powered BrainLift researcher and document generator",
+      description: "Define your research purpose through AI-guided conversations, automate parallel research across Experts, SpikyPOVs, and Knowledge Trees, generate comprehensive documents with citations, and seamlessly integrate with your project directories for version tracking.",
+      technologies: ["Electron", "React", "TypeScript", "Firebase", "OpenAI API", "Tavily API", "TypeScript Orchestration", "Zustand"],
       video: {
         src: "https://www.youtube.com/embed/iZiv-WBLr8k",
         alt: "BrainSwift Demo"
