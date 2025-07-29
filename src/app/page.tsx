@@ -30,7 +30,7 @@ export default function Portfolio() {
         {/* Floating orbs - Blue and Gold theme */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
-            className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-600/60 rounded-full mix-blend-normal opacity-70 filter blur-xl"
+            className="absolute top-1/6 right-1/2 w-72 h-72 bg-blue-600/60 rounded-full mix-blend-normal opacity-70 filter blur-xl"
             animate={{
               x: [0, 100, 0],
               y: [0, -100, 0],
@@ -42,7 +42,7 @@ export default function Portfolio() {
             }}
           />
           <motion.div
-            className="absolute top-1/3 right-1/4 w-72 h-72 bg-yellow-400/60 rounded-full mix-blend-normal opacity-70 filter blur-xl"
+            className="absolute top-1/2 right-1/6 w-72 h-72 bg-yellow-400/60 rounded-full mix-blend-normal opacity-70 filter blur-xl"
             animate={{
               x: [0, -100, 0],
               y: [0, 100, 0],
@@ -55,15 +55,35 @@ export default function Portfolio() {
           />
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Badge variant="secondary" className="mb-4 bg-gray-800 text-gray-200 border-gray-700">
-              Available for Relocation
-            </Badge>
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
+            {/* Profile Picture - Left Side */}
+            <motion.div
+              className="flex-shrink-0"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="relative w-64 h-64 lg:w-80 lg:h-80">
+                <img
+                  src="/images/floridatripsmall.jpg"
+                  alt="Sean Stricker"
+                  className="w-full h-full rounded-full object-cover border-6 border-blue-500/30 shadow-2xl shadow-blue-500/30"
+                />
+                <div className="absolute inset-0 rounded-full border-4 border-yellow-400/40 animate-pulse"></div>
+              </div>
+            </motion.div>
+
+            {/* Content - Right Side */}
+            <motion.div
+              className="flex-1 text-center lg:text-left"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <Badge variant="secondary" className="mb-4 bg-gray-800 text-gray-200 border-gray-700">
+                Available for Relocation
+              </Badge>
             
             <motion.h1 
               className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6"
@@ -84,7 +104,7 @@ export default function Portfolio() {
             </motion.p>
             
             <motion.p 
-              className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed"
+              className="text-lg text-gray-400 mb-8 max-w-2xl lg:mx-0 mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -93,7 +113,7 @@ export default function Portfolio() {
             </motion.p>
 
             <motion.div 
-              className="flex items-center justify-center gap-2 text-sm text-gray-400 mb-8"
+              className="flex items-center justify-center lg:justify-start gap-2 text-sm text-gray-400 mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -103,7 +123,7 @@ export default function Portfolio() {
             </motion.div>
 
             <motion.div 
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
@@ -150,7 +170,8 @@ export default function Portfolio() {
                 </Button>
               </div>
             </motion.div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
 
         {/* Scroll indicator */}
