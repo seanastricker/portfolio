@@ -41,7 +41,7 @@ export const portfolioData: PortfolioData = {
       id: "snap-factor",
       title: "Snap Factor",
       subtitle: "AI-powered educational social platform for K-12 mathematics",
-      description: "An innovative mobile application that combines Snapchat-style social features with AI-powered mathematics education. Features include homework assistance through image recognition, RAG-powered explanations using OpenStax textbooks, daily math challenges, and collaborative learning experiences. Built with React Native and advanced AI technologies.",
+      description: "Snap photos of math problems for instant homework assistance, access RAG-powered explanations and practice problems, compete in daily math challenges, and engage in collaborative learning experiences with peers.",
       technologies: ["React Native", "Expo", "TypeScript", "Firebase", "OpenAI API", "Pinecone", "Python"],
       video: {
         src: "https://www.youtube.com/embed/KAHFnyNhLaE",
