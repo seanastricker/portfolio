@@ -26,7 +26,7 @@ export const portfolioData: PortfolioData = {
       description: "Generate compelling storylines, craft memorable characters and monsters, balance encounters, and bring your fantasy worlds to life with advanced writing and content generation assistance.",
       technologies: ["TypeScript", "React", "Vite", "Tailwind CSS", "Firebase", "AI/ML APIs"],
       video: {
-        src: "https://www.youtube.com/embed/DGKQE0eA_UA",
+        src: "https://www.youtube.com/embed/sOOIkcZx33w",
         alt: "Dungeons & Drafting Demo"
       },
       links: {
@@ -44,7 +44,7 @@ export const portfolioData: PortfolioData = {
       description: "Snap photos of math problems for instant homework assistance, access RAG-powered explanations and practice problems, compete in daily math challenges, and engage in collaborative learning experiences with peers.",
       technologies: ["React Native", "Expo", "TypeScript", "Firebase", "OpenAI API", "Pinecone", "Python"],
       video: {
-        src: "https://www.youtube.com/embed/KAHFnyNhLaE",
+        src: "https://www.youtube.com/embed/MaTV6QNUwGg",
         alt: "Snap Factor Demo"
       },
       links: {
@@ -61,7 +61,7 @@ export const portfolioData: PortfolioData = {
       description: "Define your research purpose through AI-guided conversations, automate parallel research across Experts, SpikyPOVs, and Knowledge Trees, generate comprehensive documents with citations, and seamlessly integrate with your project directories for version tracking.",
       technologies: ["Electron", "React", "TypeScript", "Firebase", "OpenAI API", "Tavily API", "TypeScript Orchestration", "Zustand"],
       video: {
-        src: "https://www.youtube.com/embed/iZiv-WBLr8k",
+        src: "https://www.youtube.com/embed/8Rv_zXL1gSM",
         alt: "BrainSwift Demo"
       },
       links: {
@@ -96,7 +96,7 @@ export const portfolioData: PortfolioData = {
       description: "Simulate the life of Gauntlet AI Challenger who must balance Health, Social, and CCAT Score throughout the program to land a $200k job or be kicked out. Real-time multiplayer support, pixel-art top-down 2D environments, and character customization.",
               technologies: ["Godot Engine", "GDScript", "Multiplayer Networking", "2D Graphics", "Real-time Systems"],
       video: {
-        src: "https://www.youtube.com/embed/zROjzgARbWE",
+        src: "https://www.youtube.com/embed/2KEpgNp7t9o",
         alt: "Austen Allred's Advanced AI Arena Demo"
       },
       links: {
@@ -114,7 +114,7 @@ export const portfolioData: PortfolioData = {
       description: "A specialized CRM solution built on SuiteCRM platform, designed specifically to manage volunteer background checks, volunteer hours, program matching, parent communication, incident reporting, and equipment tracking for volunteers and parents to have everything they need to manage youth sports leagues.",
       technologies: ["PHP", "JavaScript", "Smarty", "SCSS", "MySQL", "SuiteCRM Platform", "Web Development"],
       video: {
-        src: "https://www.youtube.com/embed/09g8J99iRoc",
+        src: "https://www.youtube.com/embed/Uc2XNDvKaUE",
         alt: "Youth Sports League CRM Demo"
       },
       links: {
