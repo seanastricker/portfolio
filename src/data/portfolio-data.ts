@@ -79,7 +79,7 @@ export const portfolioData: PortfolioData = {
       description: "Follow any thread of curiosity and receive AI-powered content generation backed by credible open-source textbooks to transform your learning process. Utilize our personalized study material creation, exercise generation, progress tracking, interview assessments, and intelligent learning analytics.",
               technologies: ["TypeScript", "Python", "Microservices", "AI/ML", "Content Generation", "FastAPI", "React", "OpenStax"],
       video: {
-        src: "https://www.youtube.com/embed/cP_HGO1Sqs4",
+        src: "https://www.youtube.com/embed/_VWCaXU3g4Y",
         alt: "Spool Demo"
       },
       links: {
